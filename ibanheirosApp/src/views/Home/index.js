@@ -1,15 +1,16 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { View, Text } from 'react-native'
+import { Container } from './styles'
+import Lista from '../../components/Lista'
 
 
 
-const Home = (props) => {
-  console.log(props)
+const Home = ({ banheiros }) => {
   return (
-    <View>
-      <Text>Teste</Text>
-    </View>
+    <Container>
+      <Lista banheiros={banheiros} />
+    </Container>
   )
 }
 
