@@ -1,15 +1,18 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { View, Text } from 'react-native'
-import { Container } from './styles'
+import { Container, Content } from './styles'
 import Lista from '../../components/Lista'
+import Busca from '../../components/Busca'
 
 
 
 const Home = ({ banheiros }) => {
   return (
     <Container>
-      <Lista banheiros={banheiros} />
+      <Busca />
+      <Content>
+        <Lista banheiros={banheiros} />
+      </Content>
     </Container>
   )
 }
